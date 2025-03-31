@@ -1,0 +1,171 @@
+:root {
+    --primary-clr: rgb(161, 160, 161);
+    --text-primary-clr: rgb(7, 7, 7);
+}
+
+@import 
+url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap');
+
+
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    font-family: "Montserrat", sans-serif;
+}
+
+main {
+    width: 100%;
+    height: auto;
+}
+
+.sections-odds {
+    padding: 100px 5%;
+    background-color: rgb(194, 194, 194);
+}
+
+.sections-even {
+    background-color: grey;
+    padding: 100px 5%;
+}
+
+h1 {
+    color: var(--text-primary-clr);
+    font-size: 2rem;
+}
+
+span {
+    color: white;
+}
+
+p {
+    color: var(--text-primary-clr);
+}
+
+li, a {
+    
+    font-weight: 500;
+    font-size: 16px;
+    text-decoration: none;
+    color: var(--text-primary-clr);
+}
+
+.cabecalho {
+    z-index: 1000;
+    position: sticky;top: 0;
+    height: 100px;
+    padding: 30px 5%;
+    background-color: var(--primary-clr);
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    gap: 30px;
+}
+
+.nav_links {
+    list-style: none;
+}
+
+.nav_links li {
+    padding: 0px 10px;
+}
+
+.nav_links li a {
+    padding: 0px;
+    transition: all 0.3s ease 0s;
+}
+
+.nav_links li a:hover {
+    transition: all 0.3s ease 0s;
+    color: rgb(255, 255, 255);
+}
+
+@keyframes slideInRight {
+    from {
+        transform: translateX(300px);
+        opacity: 0;
+    }
+
+    to {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+.main-container { 
+
+    /* Animations; */
+
+    /* animation: name duration timing-function delay iteraction-count direction fill-mode; versão encurtada */
+    /* animation: slideInRight 1s ease-in 0s 1 normal none; */
+
+    animation: slideInRight 2s ease-in-out;  /* Versão encurtada sem os valores que já são padrão */
+
+    animation: slideInRight linear forwards;
+    animation-timeline: view();
+    animation-range: entry 0% cover 30%;
+    /* animation-name: slideInRight; */
+    /* animation-duration: 0s;  padrão  */
+    /* animation-timing-function: ease;  padrão */
+    /* animation-delay: 0s; padrão  */
+    /* animation-iteration-count: 1; padrão  */
+    /* animation-duration: normal; padrão  */
+    /* animation-fill-mode: none; padrão  */
+    
+    /* Animations end; */
+
+    background-color: var(--primary-clr);
+    border-radius: 20px;
+    box-shadow: 5px 5px 5px rgb(87, 87, 87);
+    margin: 5%;
+    padding: 5%;
+    border: 2px solid rgb(255, 255, 255);
+}
+
+.image-card {
+    border-radius: 10%;
+    width: 100%;
+    margin: 10px auto;
+    /* border: 1px solid blue; */
+}
+
+.titulo-main-card {
+    line-height: 0.8em;
+    font-size: 3rem;
+    /* border: 1px solid green; */
+}
+
+.text-content {
+    /* border: 1px solid green; */
+    text-align: right;
+}
+
+.text-paragraph {
+    padding: 10px;
+    line-height: 1.5em;
+}
+
+
+footer {
+    padding: 50px;
+    text-align: center;
+    background: var(--primary-clr);
+    color: var(--text-primary-clr);
+    /* border: 1px solid green; */
+}
+
+@media (min-width: 600px) {
+    
+    .main-container {
+        max-width: 500px;
+        background-color: var(--primary-clr);
+        border-radius: 20px;
+        box-shadow: 5px 5px 5px rgb(87, 87, 87);
+        margin: 5% auto;
+        padding: 5%;
+        border: 2px solid rgb(255, 255, 255);
+        }
+}
