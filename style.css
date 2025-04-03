@@ -13,6 +13,10 @@ url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap')
     margin: 0;
 }
 
+html {
+    min-width: 500px;
+}
+
 body {
     font-family: "Montserrat", sans-serif;
 }
@@ -60,12 +64,14 @@ li, a {
     padding: 30px 5%;
     background-color: var(--primary-clr);
     display: flex;
-    justify-content: space-evenly;
+    justify-content: space-between;
     align-items: center;
     gap: 30px;
+    border: 1px solid red;
 }
 
 .nav_links {
+    display: flex;
     list-style: none;
 }
 
@@ -83,7 +89,7 @@ li, a {
     color: rgb(255, 255, 255);
 }
 
-@keyframes slideInRight {
+/* @keyframes slideInRight {
     from {
         transform: translateX(300px);
         opacity: 0;
@@ -93,7 +99,7 @@ li, a {
         transform: translateX(0);
         opacity: 1;
     }
-}
+} */
 
 .main-container { 
 
@@ -102,11 +108,11 @@ li, a {
     /* animation: name duration timing-function delay iteraction-count direction fill-mode; versão encurtada */
     /* animation: slideInRight 1s ease-in 0s 1 normal none; */
 
-    animation: slideInRight 2s ease-in-out;  /* Versão encurtada sem os valores que já são padrão */
+    /* animation: slideInRight 2s ease-in-out;  Versão encurtada sem os valores que já são padrão */
 
-    animation: slideInRight linear forwards;
+    /* animation: slideInRight linear forwards;
     animation-timeline: view();
-    animation-range: entry 0% cover 30%;
+    animation-range: entry 0% cover 30%; */
     /* animation-name: slideInRight; */
     /* animation-duration: 0s;  padrão  */
     /* animation-timing-function: ease;  padrão */
@@ -158,6 +164,8 @@ footer {
 }
 
 @media (min-width: 600px) {
+
+    
     
     .main-container {
         max-width: 500px;
