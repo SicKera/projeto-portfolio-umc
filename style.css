@@ -14,7 +14,8 @@ url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap')
 }
 
 html {
-    min-width: 500px;
+    min-width: 510px;
+    border: 1px solid purple;
 }
 
 body {
