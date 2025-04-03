@@ -15,7 +15,6 @@ url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap')
 
 html {
     min-width: 515px;
-    border: 1px solid purple;
 }
 
 body {
@@ -68,7 +67,6 @@ li, a {
     justify-content: space-between;
     align-items: center;
     gap: 30px;
-    border: 1px solid red;
 }
 
 .nav_links {
