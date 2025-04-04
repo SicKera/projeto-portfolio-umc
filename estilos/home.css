@@ -124,15 +124,18 @@ li, a {
     background-color: var(--primary-clr);
     border-radius: 20px;
     box-shadow: 5px 5px 5px rgb(87, 87, 87);
-    margin: 5%;
+    margin: 5% auto;
     padding: 5%;
     border: 2px solid rgb(255, 255, 255);
+    display: flex;
+    max-width: 900px;
 }
 
 .image-card {
+    width: 50%;
+    height: 50%;
     border-radius: 10%;
-    width: 100%;
-    margin: 10px auto;
+    margin: auto;
     /* border: 1px solid blue; */
 }
 
@@ -145,6 +148,7 @@ li, a {
 .text-content {
     /* border: 1px solid green; */
     text-align: right;
+    padding-left: 20px;
 }
 
 .text-paragraph {
@@ -162,12 +166,20 @@ footer {
     /* border: 1px solid green; */
 }
 
-@media (min-width: 600px) {
+@media (max-width: 768px) {
 
-    
+    .image-card {
+        width: 100%;
+        border-radius: 10%;
+        margin: 5% auto;
+        /* border: 1px solid blue; */
+    }
     
     .main-container {
+        width: 330px;
         max-width: 700px;
+        
+        display: block;
         background-color: var(--primary-clr);
         border-radius: 20px;
         box-shadow: 5px 5px 5px rgb(87, 87, 87);
