@@ -84,7 +84,37 @@ li, a {
     padding: 5%;
     border: 2px solid rgb(255, 255, 255);
     max-width: 900px;
+    text-align: center;
 }
+
+.presentation-container > h2 {
+    font-size: 3rem;
+}
+
+.presentation-container > p {
+    font-size: 1.5rem;
+}
+
+.sections-even {
+    background-color: grey;
+    padding: 100px 5%;
+}
+
+.certificado-container {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 5% auto;
+    gap: 20%;
+    /* border: 1px solid yellowgreen; */
+    justify-content: center;
+}
+
+.certificados-card-image {
+    width: 200px;
+}
+
+
+
 
 footer {
     padding: 50px;

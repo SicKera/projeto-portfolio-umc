@@ -70,6 +70,13 @@ li, a {
     color: rgb(255, 255, 255);
 }
 
+.sections-odds {
+    padding: 10px 5%;
+    background-color: rgb(194, 194, 194);
+    /* border: 1px solid red; */
+}
+
+
 footer {
     padding: 50px;
     text-align: center;
