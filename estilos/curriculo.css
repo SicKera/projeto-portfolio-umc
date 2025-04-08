@@ -1,9 +1,9 @@
 :root {
-    --primary-clr: #e68122;             /* fundo principal */
-    --secondary-clr: #a3a3a3;           /* fundo alternado */
-    --text-primary-clr: #1C1C1C;        /* texto principal */
-    --highlight-clr: #e7e7e7;           /* azul de destaque */
-    --light-text: #FFFFFF;              /* texto claro */
+    --primary-clr: #7a7a7a;             
+    --secondary-clr: #a3a3a3;           
+    --text-primary-clr: #1C1C1C;        
+    --highlight-clr: #e7e7e7;           
+    --light-text: #FFFFFF;              
 }
 
 @import 
@@ -85,11 +85,13 @@ li, a {
     background-color: white;
 }
 
+.fallback > p > a {
+    color: var(--primary-clr);
+}
 
 footer {
     padding: 50px;
     text-align: center;
     background: var(--primary-clr);
-    color: var(--text-primary-clr);
-    /* border: 1px solid green; */
+    color: var(--highlight-clr);
 }

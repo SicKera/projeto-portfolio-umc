@@ -1,9 +1,9 @@
 :root {
-    --primary-clr: #e68122;             /* fundo principal */
-    --secondary-clr: #a3a3a3;           /* fundo alternado */
-    --text-primary-clr: #1C1C1C;        /* texto principal */
-    --highlight-clr: #e7e7e7;           /* azul de destaque */
-    --light-text: #FFFFFF;              /* texto claro */
+    --primary-clr: #7a7a7a;             
+    --secondary-clr: #a3a3a3;           
+    --text-primary-clr: #1C1C1C;        
+    --highlight-clr: #e7e7e7;           
+    --light-text: #FFFFFF;              
 }
 
 @import 
@@ -102,7 +102,7 @@ li, a {
 
 .projetos-presentation-container > p {
     text-align: center;
-
+    padding-top: 30px;
 }
 
 .projetos-cards {
@@ -115,7 +115,6 @@ li, a {
     box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.2);
     transition: transform 0.3s ease;
     text-align: center;
-    border: 1px solid purple;
 }
 
 .projetos-cards:hover {
@@ -137,7 +136,7 @@ footer {
     padding: 50px;
     text-align: center;
     background: var(--primary-clr);
-    color: var(--light-text);
+    color: var(--highlight-clr);
 }
 
 @media (min-width: 600px) {
