@@ -1,6 +1,9 @@
 :root {
-    --primary-clr: rgb(161, 160, 161);
-    --text-primary-clr: rgb(7, 7, 7);
+    --primary-clr: #e68122;             /* fundo principal */
+    --secondary-clr: #a3a3a3;           /* fundo alternado */
+    --text-primary-clr: #1C1C1C;        /* texto principal */
+    --highlight-clr: #e7e7e7;           /* azul de destaque */
+    --light-text: #FFFFFF;              /* texto claro */
 }
 
 @import 
@@ -36,7 +39,7 @@ li, a {
     font-weight: 500;
     font-size: 16px;
     text-decoration: none;
-    color: var(--text-primary-clr);
+    color: var(--light-text);
 }
 
 .cabecalho {
@@ -67,22 +70,74 @@ li, a {
 
 .nav_links li a:hover {
     transition: all 0.3s ease 0s;
-    color: rgb(255, 255, 255);
+    color: var(--text-primary-clr);
 }
 
 .sections-odds {
     padding: 10px 5%;
-    background-color: rgb(194, 194, 194);
-    /* border: 1px solid red; */
+    background-color: var(--secondary-clr);
+    height: 700px;
 }
 
+.projetos-presentation-container {
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+    padding: 40px 0;
+    background-color: var(--primary-clr);
+    border-radius: 20px;
+    box-shadow: 5px 5px 5px rgb(87, 87, 87);
+    margin: 5% auto;
+    padding: 5%;
+    border: 2px solid rgb(255, 255, 255);
+    max-width: 800px;
+    text-align: center;
+}
+
+.projetos-presentation-container > h2 {
+    text-align: center;
+    font-size: 3rem;
+    color: var(--light-text);
+}
+
+.projetos-presentation-container > p {
+    text-align: center;
+
+}
+
+.projetos-cards {
+    background-color: var(--primary-clr);
+    color: var(--light-text);
+    border-radius: 10px;
+    padding: 30px 20px;
+    min-width: 200px;
+    max-width: 300px;
+    box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease;
+    text-align: center;
+    border: 1px solid purple;
+}
+
+.projetos-cards:hover {
+    transform: scale(1.05);
+}
+
+.projetos-cards a {
+    color: var(--light-text);
+    font-weight: bold;
+    font-size: 1.2rem;
+    text-decoration: none;
+}
+
+.projetos-cards:hover > a {
+    color: var(--text-primary-clr);
+}
 
 footer {
     padding: 50px;
     text-align: center;
     background: var(--primary-clr);
-    color: var(--text-primary-clr);
-    /* border: 1px solid green; */
+    color: var(--light-text);
 }
 
 @media (min-width: 600px) {

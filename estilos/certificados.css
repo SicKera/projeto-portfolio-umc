@@ -1,6 +1,9 @@
 :root {
-    --primary-clr: rgb(161, 160, 161);
-    --text-primary-clr: rgb(7, 7, 7);
+    --primary-clr: #e68122;             /* fundo principal */
+    --secondary-clr: #a3a3a3;           /* fundo alternado */
+    --text-primary-clr: #1C1C1C;        /* texto principal */
+    --highlight-clr: #e7e7e7;           /* azul de destaque */
+    --light-text: #FFFFFF;              /* texto claro */
 }
 
 @import 
@@ -27,7 +30,7 @@ main {
 }
 
 h1 {
-    color: var(--text-primary-clr);
+    color: var(--light-text);
     font-size: 2rem;
 }
 
@@ -36,7 +39,7 @@ li, a {
     font-weight: 500;
     font-size: 16px;
     text-decoration: none;
-    color: var(--text-primary-clr);
+    color: var(--light-text);
 }
 
 .cabecalho {
@@ -67,13 +70,12 @@ li, a {
 
 .nav_links li a:hover {
     transition: all 0.3s ease 0s;
-    color: rgb(255, 255, 255);
+    color: var(--text-primary-clr);
 }
 
 .sections-odds {
     padding: 10px 5%;
-    background-color: rgb(194, 194, 194);
-    /* border: 1px solid red; */
+    background-color: var(--secondary-clr);
 }
 
 .presentation-container {
@@ -83,21 +85,18 @@ li, a {
     margin: 5% auto;
     padding: 5%;
     border: 2px solid rgb(255, 255, 255);
-    max-width: 900px;
+    max-width: 800px;
     text-align: center;
 }
 
 .presentation-container > h2 {
     font-size: 3rem;
+    color: var(--light-text);
 }
 
 .presentation-container > p {
-    font-size: 1.5rem;
-}
-
-.sections-even {
-    background-color: grey;
-    padding: 100px 5%;
+    font-size: 1.2rem;
+    color: var(--text-primary-clr);
 }
 
 .certificado-container {
@@ -105,21 +104,17 @@ li, a {
     flex-wrap: wrap;
     margin: 5% auto;
     gap: 20%;
-    /* border: 1px solid yellowgreen; */
     justify-content: center;
 }
 
 .certificados-card-image {
-    width: 200px;
+    width: 320px;
+    box-shadow: 5px 5px 5px rgb(87, 87, 87);
 }
-
-
-
 
 footer {
     padding: 50px;
     text-align: center;
     background: var(--primary-clr);
     color: var(--text-primary-clr);
-    /* border: 1px solid green; */
 }
