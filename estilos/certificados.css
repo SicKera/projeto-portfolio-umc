@@ -75,6 +75,7 @@ li, a {
 
 .sections-odds {
     padding: 10px 5%;
+    height: 800px;
     background-color: var(--secondary-clr);
 }
 
